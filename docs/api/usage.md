@@ -45,8 +45,8 @@ The API will send the following headers in response to each request:
 
 If a user exceeds the rate limit or misuses the API, the API will return an error message with the appropriate status code and message. The message will indicate that the user has exceeded the rate limit or misused the API and must stop doing so.
 
-To avoid reaching the limit, you should cache the requests or use a backoff strategy when receiving an error response or self-host your own [amvstrm's API](/docs/api/backend).
+To avoid reaching the limit, you should cache the requests or use a backoff strategy when receiving an error response or self-host your own [amvstrm's API](/docs/api/deploy).
 
 ## Self-hosted
 
-We recommend you to self-host our [API](/docs/api/backend) for better performance and you can implement a caching system (redis) to cache the data and avoid reaching the limit.
+We recommend you to self-host our [API](/docs/api/deploy) for better performance and you can implement a caching system (redis) to cache the data and avoid reaching the limit.
