@@ -1,0 +1,46 @@
+# FAQ
+
+This is all FAQ about our website and API.
+
+## I got 500 errors, what should I do?
+
+500 errors can occur due to:
+
+- Too much request
+- Backend error
+- Frontend error
+- No connection
+
+If you think this error is caused by our backend or frontend, Please make an issue on our [Github](https://github.com/amvstrm/amvstrm/issues/new).
+
+## The video is not loading on the player
+
+If you see the loading animation for too long on the player, it's most likely because the video is not fully loaded, the video does not exist or the video URL has expired.
+
+You can fix it by refreshing the watch page or switching to a different player.
+
+## API returned (Too much req) but the header isn't
+
+Since we use the official Anilist's GraphQL API, we can only get 90 req per minute as stated on their [API docs](https://anilist.gitbook.io/anilist-apiv2-docs/overview/rate-limiting).
+
+## Can I use your logo and name?
+
+No, go read our [License](/license)
+
+## CORS error
+
+You should install the CORS extension on the Chrome web store or Firefox addons store to play a video.
+
+## More scraper & streaming source when?
+
+Working on it using [Anify's](https://anify.tv) API. (Anify died...)
+
+## What if your website got DMCA?
+
+Still completely operates normally but is available only in my country.
+
+_just leave us and every pirater alone, COMPANIES... we are not US citizens or any rich person!_
+
+## Will you rework your API from JS to TS?
+
+YES!

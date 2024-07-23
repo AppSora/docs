@@ -1,0 +1,90 @@
+# Render
+
+> [!INFO]
+> Not familiar with render stuff... Feel free to correct us
+
+## Deploy button
+
+Quickly deploy it to render to your own account with no configuration.
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/amvstrm/amvstrm)
+
+## Manual deploy
+
+### Prerequisites
+
+- A Render account
+- A GitHub account
+- Git CLI installed on your local machine
+- Node.js and npm installed on your local machine
+
+### Step 1: Fork and Clone the Repository
+
+1. Fork our repo by clicking on the "Fork" button on the top right corner of the repository page.
+2. Clone the forked repository to your local machine using the Git CLI.
+
+   ```bash
+   git clone https://github.com/<your-username>/amvstrm.git
+   ```
+
+  or
+  
+  Import your forked repository and connect it to your render web services.
+
+  ![rnder-cfg-deploy.png](/docs_assets/rnder-cfg-deploy.png)
+
+
+### Step 2: Install Dependencies (Optional)
+
+1. Navigate to the cloned repository directory using the terminal.
+2. Install the dependencies using npm.
+
+   ```bash
+   npm install
+   ```
+
+### Step 3: Set Environment Variables
+
+#### Local
+
+Rename the .env.example to .env and then configure any thing for your liking.
+
+```env
+API_URL= <Your API URL or Our default API URL>
+VERSION=v2 <Default version>
+
+# OPTIONAL (For tracking & Commenting system)
+DISQUS_ID=
+POSTHOG_PK=
+POSTHOG_HOST=
+```
+
+#### On Dashboard
+
+You can add environment varible on the dashboard
+
+![env-cfg-rndr.png](/docs_assets/env-cfg-rndr.png)
+
+Go to `Dashboard > <Your Project Name> > Environment` and Add a `.env` to the file name and Content should be :  
+
+```env
+API_URL= <Your API URL or Our default API URL>
+VERSION=v2 <Default version>
+
+# OPTIONAL (For tracking & Commenting system)
+DISQUS_ID=
+POSTHOG_PK=
+POSTHOG_HOST=
+```
+
+### Step 4: Deploy to render
+
+1. Install [Render CLI](https://render.com/docs/cli)
+
+2. Follow the prompts to complete the deployment process.
+
+Once the deployment is complete, you can access the application by visiting the URL provided by Render.  
+
+Congratulations! You have successfully deployed our application to the web...
+
+_**idk why render is so hard to config and confusing asf...**_

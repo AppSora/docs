@@ -1,0 +1,27 @@
+# Credit
+
+amvstrm relies on many packages and data sources to work.
+
+## Frontend
+
+- [Nuxt 3](https://nuxt.com)
+- [Artplayer](https://artplayer.org)
+- [@vite-pwa](https://github.com/vite-pwa/vite-plugin-pwa)
+- [Vuetify](https://vuetifyjs.com)
+- [Vue-Disqus](https://github.com/ktquez/vue-disqus)
+
+## Backend
+
+- [@consumet/extensions](https://github.com/consumet/consumet.ts)
+- [riimuru/gogoanime-api](https://github.com/riimuru/gogoanime-api)
+- [ChrisMichaelPerezSantiago/gogoanime](https://github.com/ChrisMichaelPerezSantiago/gogoanime)
+- [Eltik/Anify (RIP)](https://docs.anify.tv/)
+- [Ani-skip](http://api.aniskip.com/)
+
+## Data source
+
+- [Anitaku (Formerly Gogoanime)](https://anitaku.com)
+- [MAL-Sync-Backup](https://github.com/MALSync/MAL-Sync-Backup)
+- [MAL-Sync-Backup 2](https://github.com/bal-mackup/mal-backup)
+- [Anilist](https://anilist.com)
+- [Ani-skip](http://api.aniskip.com/)
