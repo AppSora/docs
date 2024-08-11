@@ -12,6 +12,9 @@ Before deploying the images, you must have the following:
 
 ## V2
 
+> [!WARNING]
+> Some configurations are needed to run both frontend and backend. Please read the [Docker Usage](https://docs.docker.com) & [Configuration guide](https://docs.amvstr.me/docs/guide/configuration) to know more.
+
 We do not have docker for frontend and backend yet but we can provide you with the `Dockerfile` for the backend. You can use this to create your own Docker image for backend.
 
 ### Frontend
@@ -31,6 +34,13 @@ RUN npm install --production=false
 
 COPY --link . .
 
+# https://docs.amvstr.me/docs/guide/configuration#frontend
+ENV API_URL=
+ENV VERSION=v2
+ENV DISQUS_ID=
+ENV POSTHOG_PK=
+ENV POSTHOG_HOST=https://app.posthog.com
+
 RUN npm run build
 RUN npm prune
 
@@ -46,7 +56,27 @@ CMD [ "node", ".output/server/index.mjs" ]
 
 ### Backend
 
-Soon...
+You can modified the `Dockerfile` to create your image for backend. (NOT TESTED)
+
+```dockerfile
+FROM node:18-slim as builder
+
+WORKDIR /usr/src/app
+COPY . . 
+
+# https://docs.amvstr.me/docs/guide/configuration#backend
+ENV RATE_LIMIT=
+ENV BLOCK_WITH_CORS=false
+ENV ALLOWLIST=<your-allowed-domains / you can add multiple domains with comma>
+ENV PORT=8080
+ENV SENTRY_DSN_URL=<your-sentry-dsn-url / optional>
+
+RUN npm install
+
+EXPOSE 8080
+
+CMD ["npm", "start"]
+```
 
 ## V1
 

@@ -55,6 +55,10 @@ export default defineConfig({
         ],
       },
       {
+        text: "Projects",
+        link: "/projects",
+      },
+      {
         text: "FAQs",
         link: "/faq",
       },
