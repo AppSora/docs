@@ -1,15 +1,15 @@
 export default defineAppConfig({
   docus: {
-    title: "amvstrm",
+    title: "Sora",
 
     description:
-      "amvstrm is an open source anime streaming platform that offer free anime with no ADs.",
+      "Free anime streaming",
 
     image:
       "/banner.png",
 
     socials: {
-      github: "amvstrm/docs",
+      github: "RiuStudio/Site",
     },
 
     aside: {
@@ -18,12 +18,12 @@ export default defineAppConfig({
     },
 
     header: {
-      title: "amvstrm's Docs",
+      title: "Sora Docs",
       logo: false,
     },
 
     github: {
-      owner: "amvstrm",
+      owner: "Sora",
       repo: "docs",
       branch: "master",
       edit: true
